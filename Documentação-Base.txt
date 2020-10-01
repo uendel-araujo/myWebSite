@@ -5,9 +5,9 @@ Textos : #F0F0F0
 
 							Tipografias
 
-Titulos : SECULAR ONE / CONCERT ONE / LILITA ONE ( fonts displays )
+Titulos : SECULAR ONE ( fonts displays )
 
-Paragr : DELIUS / COMIC NEUE / RALEWAY
+Paragr : RALEWAY
 
 Botões : FREDOKA ONE
 
