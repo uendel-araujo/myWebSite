@@ -1,0 +1,21 @@
+							Cores utilizadas
+Background : #000222
+Titulos : #AAD9EF
+Textos : #F0F0F0
+
+							Tipografias
+
+Titulos : SECULAR ONE / CONCERT ONE / LILITA ONE ( fonts displays )
+
+Paragr : DELIUS / COMIC NEUE / RALEWAY
+
+Botões : FREDOKA ONE
+
+
+
+							TAMANHOS DAS FONTES
+Titulos : 64px - BOLD
+
+Paragr : 24px - REGULAR
+
+Botões : 18px - BOLD
