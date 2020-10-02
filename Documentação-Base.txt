@@ -1,6 +1,6 @@
 							Cores utilizadas
 Background : #000222
-Titulos : #AAD9EF
+Titulos : #00B8E4
 Textos : #F0F0F0
 
 							Tipografias

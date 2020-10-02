@@ -1,0 +1,14 @@
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/bgHeader.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dark-header {
+  background: rgba($color: #000000, $alpha: 0.5);
+  width: 100vw;
+  height: 100vh;
+}
