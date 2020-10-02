@@ -6,16 +6,19 @@ Textos : #F0F0F0
 							Tipografias
 
 Titulos : SECULAR ONE ( fonts displays )
-
 Paragr : RALEWAY
-
 Botões : FREDOKA ONE
 
 
 
 							TAMANHOS DAS FONTES
 Titulos : 64px - BOLD
-
 Paragr : 24px - REGULAR
-
 Botões : 18px - BOLD
+
+
+							SITE DA LOGOMARCA
+https://www.freelogodesign.org/preview?lang=pt&name=Uendel%20Araujo&logo=900b970b-2670-4918-8494-71950660057d
+
+							SITE DOS ICONS
+https://fontawesome.com/icons?d=gallery&m=free

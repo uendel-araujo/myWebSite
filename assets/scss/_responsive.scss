@@ -1,7 +1,16 @@
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   header {
     background-image: url('../images/bgHeaderResponsive.jpg');
     background-position: center;
     background-size: cover;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .header-contacts {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
