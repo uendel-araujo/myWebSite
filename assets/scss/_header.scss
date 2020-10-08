@@ -1,64 +1,72 @@
 body {
   overflow-x: hidden;
+  height: 3000px;
+
+  margin: 0;
+  padding: 0;
+  background-color: $bgColor;
+}
+.container-geral {
+  max-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  // background-color: saddlebrown;
 }
 
-.main-header {
-  width: 100vw;
-  height: 100vh;
-  background: #000222 url('../images/bgImage-2.jpg') no-repeat;
-  background-position: center;
-  background-clip: padding-box;
-  background-size: cover;
-}
-
-.opacity-div {
-  background-color: rgba(#000000, 0.75);
+.header {
+  background-image: url('../images/bgImage-1.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
   width: 100%;
   height: 100%;
-}
-
-.main-page {
-  display: flex;
-  flex-direction: column;
+  opacity: 0.8;
 }
 
 .top-header {
+  background-color: rgba($color: #000000, $alpha: 0.85);
+  width: 100%;
+  min-height: 100px;
+  position:-webkit-sticky; 
+  position:sticky; 
+  top:0; 
+  z-index:10;
+}
+
+.top-header-navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu-header ul {
+.menu-list-header {
   display: flex;
   flex-wrap: wrap;
 }
 
-.menu-header li {
-  margin-left: 5px;
-}
-
-.menu-header ul a {
-  padding: 15px;
-  font-family: $fontButton;
-  font-size: $sizeButton;
+.menu-list-header a {
   color: white;
-  transition: 0.2s;
+  font-family: $fontButton;
+  display: block;
+  padding: 10px;
+  margin-left: 15px;
+  font-size: 1.125em;
 }
-
-.menu-header ul a:hover {
+.menu-list-header a:hover {
   color: $secondColor;
+  transition: 0.2s;
+  font-size: 1.5em;
 }
-
-
 
 .menu-mobile {
   display: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
 }
 
-.line-menu-mobile {
-  width: 2em;
-  height: 3px;
-  margin-bottom: 5px;
+.menu-mobile-line {
+  height: 4px;
   background-color: white;
 }
