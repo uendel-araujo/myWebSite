@@ -1,7 +1,6 @@
 body {
   overflow-x: hidden;
   height: 3000px;
-
   margin: 0;
   padding: 0;
   background-color: $bgColor;
@@ -10,17 +9,15 @@ body {
   max-width: 960px;
   height: auto;
   margin: 0 auto;
-  // background-color: saddlebrown;
 }
 
 .header {
-  background-image: url('../images/bgImage-1.jpg');
+  background-image: url('../images/bgImage-5.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top center;
+  background-position: top ;
   width: 100%;
   height: 100%;
-  opacity: 0.8;
 }
 
 .top-header {
@@ -69,4 +66,43 @@ body {
 .menu-mobile-line {
   height: 4px;
   background-color: white;
+}
+
+/* EDIÇÃO E ESTILIZAÇÃO DA PARTE DO CONTEUDO DO HEADER ( MAIN PAGE ) */
+
+@keyframes animationParagraphHeader{
+  from{
+    width: 0;
+  }
+  to{
+    width: 20em;
+  }
+}
+
+.animationPHeader {
+  animation: animationParagraphHeader 4s steps(90) 500ms infinite normal;
+}
+.animationPHeader2 {
+  animation: animationParagraphHeader 4s steps(90) 1s infinite normal;
+}
+.animationPHeader3 {
+  animation: animationParagraphHeader 4s steps(90) 2s infinite normal;
+}
+
+h1.name-develop {
+  font-family: $fontTitle;
+  font-size: 6em;
+  color:$secondColor ;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.content-header p {
+  font-family: $fontParagraph;
+  font-size: 2em;
+  margin-top: 1em;
+  color: $primaryColor;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
 }
