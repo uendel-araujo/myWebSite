@@ -22,3 +22,9 @@ https://www.freelogodesign.org/preview?lang=pt&name=Uendel%20Araujo&logo=900b970
 
 							SITE DOS ICONS
 https://fontawesome.com/icons?d=gallery&m=free
+
+							OTIMIZADOR DA FUNÇÃO SCROLL
+https://lodash.com/
+
+							ANIMAÇÃO DA PAGE HEADER
+https://greensock.com
