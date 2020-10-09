@@ -28,12 +28,48 @@ function screen() {
   } else {
     tl.fromTo(logo, { x: -500 }, { duration: .4, x: 0 });
     tl.fromTo(menuItemHeader, { scale: 0 }, { duration: 0, scale: 1 });
-    tl.fromTo(nomeDevelop, { x: -500 }, { duration: .8, x: 0 });
-    tl.fromTo(PsHeader, { x: -300 }, { duration: 1, x: 0, stagger: .7 });
+    tl.fromTo(nomeDevelop, { x: -500 }, { duration: .5, x: 0 });
+    tl.fromTo(PsHeader, { x: -300 }, { duration: .7, x: 0, stagger: .7 });
   }
 }
 
 screen();
 
+/* APRIMORADOR DE ANIMAÇÃO SCROLL */
+const debounce = function (func, wait, immediate) {
+  let timeout;
+  return function (...args) {
+    const context = this;
+    const later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    const callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
 
-/** */
+/** ANIMAÇÃO DE SCROLL DA PAGINA ABOUT */
+const target = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
+
+function animeScroll() {
+  const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+  target.forEach((element) => {
+    if ((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
+    } else {
+      element.classList.remove(animationClass);
+    }
+  });
+}
+
+animeScroll();
+
+if (target.length) {
+  window.addEventListener('scroll', debounce(() => {
+    animeScroll();
+  }, 100));
+}

@@ -1,0 +1,54 @@
+/* ANIMAÇÕES */
+[data-anime] {
+  opacity: 0;
+  transition: .3s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0, 0);
+}
+
+/*FIM DAS ANIMAÇÕES*/
+
+
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  align-self: center;
+  color: $secondColor;
+  margin: $marginTitle;
+  font-size: $sizeTitle;
+  font-family: $fontTitle;
+}
+
+#about .content {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#about p {
+  margin-right: 2em;
+  font-family: $fontParagraph;
+  font-size: $sizeParagraph;
+  color: $primaryColor;
+  line-height: 1.4;
+}
+
+#about .photo img{
+  border-radius: 50%;
+  border: 3px solid $secondColor;
+  width: 250px;
+  height: 250px;
+  object-fit: fill;
+}

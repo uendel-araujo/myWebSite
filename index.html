@@ -29,6 +29,7 @@
 
 <body>
 
+  <!--INICIO DA PÁGINA INICIAL , O HEADER E MENUS-->
   <header class="header">
     <div class="top-header">
       <div class="top-header-navigation container-geral">
@@ -42,16 +43,16 @@
             <div class="menu-mobile-line"></div>
           </div>
           <ul class="menu-list-header">
-            <li class="menu-list-header-item"><a href="">Home</a></li>
-            <li class="menu-list-header-item"><a href="">Sobre</a></li>
-            <li class="menu-list-header-item"><a href="">Projetos</a></li>
-            <li class="menu-list-header-item"><a href="">Habilidades</a></li>
-            <li class="menu-list-header-item"><a href="">Contatos</a></li>
+            <li class="menu-list-header-item"><a href="index.html">Home</a></li>
+            <li class="menu-list-header-item"><a href="#about">Sobre</a></li>
+            <li class="menu-list-header-item"><a href="#projects">Projetos</a></li>
+            <li class="menu-list-header-item"><a href="#skills">Habilidades</a></li>
+            <li class="menu-list-header-item"><a href="#contact">Contatos</a></li>
           </ul>
         </nav>
       </div>
     </div>
-
+    <!--CONTEUDO DO HEADER COMO NOME E FUNÇÕES-->
     <div class="content-header container-geral">
       <h1 class="name-develop">Uendel Araujo</h1>
       <p class="animationPHeader">Desenvolvedor Front-End</p>
@@ -59,8 +60,32 @@
       <p class="animationPHeader3">Desenvolvedor Mobile</p>
     </div>
   </header>
+  <!--FINAL DA PÁGINA HEADER-->
+  <!--INICIO DA SECTION ABOUT ( PÁGINA SOBRE )-->
+  <section class="about container-geral" id="about">
+    <div class="title">
+      <h1 data-anime="left">Sobre</h1>
+    </div>
+    <div class="content">
+      <div class="text">
+        <p data-anime="left">
+          Olá! Meu nome é Uendel Ives de Araujo, tenho 27 anos, sou pai de uma garotinha, casado e possuo diversas
+          qualidades como
+          Pontualidade, Respeito, Dignidade, Sinceridade. <br>
+          Estudo programação desde 2015 e amo codificar, pode ser em Front-end , Back-End para Web ou até mesmo em
+          linguagens para aplicativos Mobile, como por exemplo React. Possuo alguns projetos dos quais disponibilizarei
+          para visualização logo na próxima seção. <br>
+          Desde já informo-lhe que estou capacitado para criar seu site , sua loja virtual ou seu aplicativo mobile.
+        </p>
+      </div>
+      <div class="photo" data-anime="right">
+        <img src="./assets/images/fotoSobre.jpg" alt="Uendel Araujo Foto">
+      </div>
+    </div>
+  </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
