@@ -52,7 +52,7 @@ const debounce = function (func, wait, immediate) {
 };
 
 /** ANIMAÇÃO DE SCROLL DA PAGINA ABOUT */
-const target = document.querySelectorAll('[data-anime]');
+/*const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
 function animeScroll() {
@@ -72,4 +72,18 @@ if (target.length) {
   window.addEventListener('scroll', debounce(() => {
     animeScroll();
   }, 100));
-}
+}*/
+const aboutTitle = document.querySelector('.about .title');
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(aboutTitle, {
+  scrollTrigger: {
+    trigger: aboutTitle,
+    start: "50px 80%",
+    markers: true,
+    toggleActions: "restar pause reverse none"
+  },
+  x: 500,
+  rotation: 360,
+  duration: 3
+});
